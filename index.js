@@ -1,7 +1,6 @@
 
-
-addDes = (e) =>{
-    e.preventdefault()
+addDes = () =>{
+  
     console.log("Click")
     let desc = document.getElementById("sendingData").value;
     console.log(desc);
