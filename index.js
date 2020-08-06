@@ -2,7 +2,7 @@
 
 addDes = () =>{
     console.log("Click")
-    var desc = document.getElementById("desc").value;
+    let desc = document.getElementById("sendingData").value;
     console.log(desc);
 
     window.parent.postMessage(JSON.stringify({
@@ -15,4 +15,6 @@ addDes = () =>{
             }
         })
     }), '*');
+
+    document.getElementById("sendingData").value=""
 }
